@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50;
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm hover:bg-[#10a27b] hover:text-gray-200 transition-colors duration-200;
+  }
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+  .navbutton {
+    @apply hover:bg-gray-100 p-2 rounded-md;
+  }
+  .title {
+    @apply font-bold text-gray-500 m-4 truncate;
+  }
+}
