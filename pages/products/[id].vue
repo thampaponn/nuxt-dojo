@@ -11,7 +11,7 @@
 
 <script setup>
 const { id } = useRoute().params
-const uri = 'https://fakestoreapi.com/products/' + id
+const uri = 'http://localhost:8000/products/' + id
 
 const { data: product } = await useFetch(uri, { key: id })
 if (!product.value) {

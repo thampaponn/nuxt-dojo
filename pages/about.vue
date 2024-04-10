@@ -5,13 +5,14 @@
       dolor aspernatur reiciendis corporis voluptatibus quisquam deserunt quam id fugit, nostrum aliquam a, totam
       quaerat. Obcaecati!</p>
     <div>
-      {{ data }}
+      {{ data[0].title }}
     </div>
   </div>
 </template>
 
 <script setup>
-const { data } = await useFetch('/api/ninja')
+const { data } = await useFetch('http://localhost:8000/products')
+console.log(data);
 </script>
 
 <style scoped>
